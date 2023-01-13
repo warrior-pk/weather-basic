@@ -11,7 +11,7 @@ const wind = document.getElementById("wind");
 
 
 async function getData(name, value){
-    const promise = await fetch(`http://api.weatherapi.com/v1/current.json?key=93e601a061334b91ace113531231301&q=${name}&aqi=yes
+    const promise = await fetch(`https://api.weatherapi.com/v1/current.json?key=93e601a061334b91ace113531231301&q=${name}&aqi=yes
     `);
     return await promise.json();
 }
@@ -19,7 +19,7 @@ async function getData(name, value){
 button.addEventListener('click', async ()=>{
     const value = city.value;
     
-    const result = await getData(value)
+    const result = await getData(value);
     
     locationName.innerText = `${result.location.name}, ${result.location.region}, ${result.location.country}`;
     time.innerText = `Local Time : ${result.location.localtime}`;
