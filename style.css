@@ -9,6 +9,7 @@ body{
 }
 .bg-light{
     background-color: #FAF8F1 !important;
+    padding-left: 2rem;
 }
 .container{
     height: 100%;
