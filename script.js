@@ -10,6 +10,7 @@ const press = document.getElementById("press");
 const wind = document.getElementById("wind");
 
 
+
 async function getData(name, value){
     const promise = await fetch(`https://api.weatherapi.com/v1/current.json?key=93e601a061334b91ace113531231301&q=${name}&aqi=yes
     `);
